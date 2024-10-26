@@ -167,15 +167,16 @@ class TradingSimulator:
         self.market_returns[self.step] = market_return
         self.actions[self.step] = action
 
-        end_position = action - 1 # short, neutral, long
+        end_position = action - 1  # short, neutral, long
         n_trades = end_position - start_position
         self.positions[self.step] = end_position
         self.trades[self.step] = n_trades
 
+        # roughly value based since starting NAV = 1
         trade_costs = abs(n_trades) * self.trading_cost_bps
         time_cost = 0 if n_trades else self.time_cost_bps
         self.costs[self.step] = trade_costs + time_cost
-        reward = start_position * market_return - self.costs[self.step]
+        reward = start_position * market_return - self.costs[max(0, self.step-1)]
         self.strategy_returns[self.step] = reward
 
         if self.step != 0:

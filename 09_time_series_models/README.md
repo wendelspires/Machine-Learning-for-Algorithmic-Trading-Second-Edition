@@ -61,7 +61,7 @@ The pandas library includes very flexible functionality to define various window
 
 Autocorrelation (also called serial correlation) adapts the concept of correlation to the time series context: just as the correlation coefficient measures the strength of a linear relationship between two variables, the autocorrelation coefficient measures the extent of a linear relationship between time series values separated by a given lag.
 
-We present the following tools to measure autorcorrelation:
+We present the following tools to measure autocorrelation:
 - autocorrelation function (ACF)
 - partial autocorrelation function (PACF)
 - correlogram as a plot of ACF or PACF against the number of lags.
@@ -132,7 +132,7 @@ The development of a volatility model for an asset-return series consists of fou
 
 ### Code examples: volatility forecasts
 
-The notebook [arch_garch_models](03_arch_garch_models.ipynb) demonstrates the usage of the ARCH library to estimate time series models for volatility foreccasting with NASDAQ data.
+The notebook [arch_garch_models](03_arch_garch_models.ipynb) demonstrates the usage of the ARCH library to estimate time series models for volatility forecasting with NASDAQ data.
 
 ### Resources
 
@@ -241,5 +241,5 @@ It first generates and stores the cointegration tests for all candidate pairs an
     - [Pairs Trading Basics: Correlation, Cointegration And Strategy](https://blog.quantinsti.com/pairs-trading-basics/)
 - Additional blog posts include:
     - [Pairs Trading using Data-Driven Techniques: Simple Trading Strategies Part 3](https://medium.com/auquan/pairs-trading-data-science-7dbedafcfe5a)
-    - [Pairs Trading Johansen & Kalman](https://letianquant.com/kalman-filter-pairs-trading.htmln)
+    - [Pairs Trading Johansen & Kalman](https://letianzj.github.io/kalman-filter-pairs-trading.html)
     - [Copulas](https://twiecki.io/blog/2018/05/03/copulas/) by Thomas Wiecki

@@ -76,7 +76,7 @@ The most prominent challenge to backtest validity, including to published result
 
 De Lopez Prado and David Bailey derived a deflated SR to compute the probability that the SR is statistically significant while controlling for the inflationary effect of multiple testing, non-normal returns, and shorter sample lengths.
 
-The pyton script [deflated_sharpe_ratio](01_multiple_testing/deflated_sharpe_ratio.py) in the directory [multiple_testing](01_multiple_testing) contains the Python implementation with references for the derivation of the related formulas.
+The python script [deflated_sharpe_ratio](01_multiple_testing/deflated_sharpe_ratio.py) in the directory [multiple_testing](01_multiple_testing) contains the Python implementation with references for the derivation of the related formulas.
 
 ### References
 
@@ -144,7 +144,7 @@ The notebook [backtesting_with_backtrader](03_backtesting_with_backtrader.ipynb)
 
 ## zipline: production-ready backtesting by Quantopian
 
-The open source [Zipline](http://www.zipline.io/index.html) library is an event-driven backtesting system maintained and used in production by the crowd-sourced quantitative investment fund [Quantopian](https://www.quantopian.com/) to facilitate algorithm-development and live-trading. It automates the algorithm's reaction to trade events and provides it with current and historical point-in-time data that avoids look-ahead bias.
+The open source [Zipline](https://zipline.ml4trading.io/index.html) library is an event-driven backtesting system maintained and used in production by the crowd-sourced quantitative investment fund [Quantopian](https://www.quantopian.com/) to facilitate algorithm-development and live-trading. It automates the algorithm's reaction to trade events and provides it with current and historical point-in-time data that avoids look-ahead bias.
 
  [Chapter 4](../04_alpha_factor_research), we introduced `zipline` to simulate the computation of alpha factors, and in [Chapter 5](../05_strategy_evaluation) we added trades to simulate a simple strategy and measure its performance as well as optimize portfolio holdings using different techniques.
 
